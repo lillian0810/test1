@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-5.html</title>
+</head>
+<body>
+    <h3>教學意見調查表</h3>
+    <form method="post" action="">
+        <fieldset>
+            <legend>個人及課程資料</legend>
+                <ol type="1">
+                    <li>科目名稱：<input type="text" name="suject"></li>
+                    <li>請選擇系所：<select size="1" name="d1">
+                        <option>英文系</option>
+                        <option>資管系</option>
+                        <option>機械系</option></select></li> 
+                    <li>講師：<input type="text" name="teacher"></li>
+                    <li>性別：<input type="radio" name="sex" value="male" checked>男
+                              <input type="radio" name="sex" value="female">女</li>
+                    <li>開課日期：<input type="date" name="selectdate"></li>
+                </ol>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>意見調查</legend>
+                <ol type="1">
+                    <li>這門課你的出席狀況是 
+                        <input type="radio" name="attend" value="no">沒有缺課
+                        <input type="radio" name="attend" value="one">缺課1-3次
+                        <input type="radio" name="attend" value="four">缺課4-6次
+                        <input type="radio" name="attend" value="six">缺課6次以上
+                    </li>
+                    <li>你對這門課的學習態度
+                        <input type="radio" name="attitude" value="serious">很認真
+                        <input type="radio" name="attitude" value="serious_half">還算認真
+                        <input type="radio" name="attitude" value="serious_no">很不認真
+                    </li>
+                    <li>修習這門課的原因(可複選) 
+                        <input type="checkbox" name="reason" value="必修">必修
+                        <input type="checkbox" name="reason" value="學分">湊學分
+                        <input type="checkbox" name="reason" value="興趣">個人興趣
+                        <input type="checkbox" name="reason" value="其他原因">其他原因
+                    </li>
+                    <li>請簡述你對此門課程的期望或改進的建議：</br>
+                        <textarea name="suggestion" wrap="hard" cols="50" rows="5"></textarea>
+                    </li>
+                </ol>
+        </fieldset>
+    </form>
+    <input type="submit" value="送出">
+    <input type="reset" value="重填">
+</body>
+</html>
